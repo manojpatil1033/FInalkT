@@ -1,0 +1,60 @@
+JAVA:Done
+Selenium:Done
+Maven:Done
+Cucumber:Done
+PostMan
+Restassured
+Git
+Parallel and Cross Browser:
+
+
+Java:1.8.0
+Selenium:4.1.0
+TestNG 7.0.0
+
+
+DesrireCapability:If we want to Open url in any server then we can use DesiredCapability
+
+DesiredCapabilities dr=new DesiredCapabilities().firefox();
+//Spcify browser
+dr.setBrowser("chrome");
+//Set platform(Platform.windows);
+
+//Specify hub url
+
+remoteWebdriver driver=new remoteWebdriver(new URL(URL of Hub),dr);
+driver.get(url);
+
+
+
+Cucumber:
+Test Runner File:
+
+@Runwith(Cucumber.class)
+@CucumberOptions
+(
+Features=
+glue=
+Monochrome=Displayes console in a Readable format
+Dryrun:Checks mapping between Feature File and Step defination file is same
+tags={@SmokeTest}
+
+
+)
+
+OR=tags={"@SmokeTest,@RegressionTest"}
+
+
+
+ArrayList to Array
+Object arr[]=ar.toArray();
+String[] dest=new String[arr.lenghth()]
+System.arrayCopy(arr,0,dest,0,dest.length)
+
+
+Go to develop branch
+git branch -u origin/develop
+
+git pull : Fetch the data from develop to local machine not to the Our branch
+
+
